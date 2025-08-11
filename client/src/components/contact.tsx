@@ -96,7 +96,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold">Endereço</h4>
-                  <p>Rua Exemplo, 123 - Vila Mariana, São Paulo - SP</p>
+                  <p>R. Bela Flor, 217 - Vila Mariana, São Paulo - SP, 04128-050</p>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold">Telefone</h4>
-                  <p>(11) 99999-9999</p>
+                  <p>(11) 91464-5858</p>
                 </div>
               </div>
 

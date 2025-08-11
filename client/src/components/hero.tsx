@@ -30,7 +30,7 @@ export default function Hero() {
               Agendar Consulta
             </button>
             <a 
-              href="https://wa.me/5511999999999" 
+              href="https://wa.me/5511914645858" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border-2 border-accent text-accent px-8 py-4 rounded-full font-semibold btn-hover inline-block"
