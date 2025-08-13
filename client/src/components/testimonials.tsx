@@ -5,21 +5,24 @@ export default function Testimonials() {
       pet: "Rex",
       initial: "M",
       text: "O Rex estava com muita dificuldade para andar após a cirurgia. Com a hidroterapia aqui na clínica, ele voltou a correr e brincar como antes. Equipe maravilhosa!",
-      rating: 5
+      rating: 5,
+      photo: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
     },
     {
       name: "Carlos Mendes",
       pet: "Luna",
       initial: "C",
       text: "A Luna tinha artrite e sofria muito. A laserterapia mudou completamente a vida dela. Hoje ela está muito mais ativa e feliz. Recomendo de olhos fechados!",
-      rating: 5
+      rating: 5,
+      photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
     },
     {
       name: "Ana Carolina",
       pet: "Mimi",
       initial: "A",
       text: "Meu gatinho Mimi teve uma lesão na coluna e os veterinários disseram que ele poderia não andar mais. Graças ao tratamento aqui, ele se recuperou completamente!",
-      rating: 5
+      rating: 5,
+      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
     }
   ];
 
@@ -40,9 +43,17 @@ export default function Testimonials() {
               data-aos-delay={`${(index + 1) * 100}`}
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">
-                  {testimonial.initial}
-                </div>
+                {testimonial.photo ? (
+                  <img 
+                    src={testimonial.photo} 
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                ) : (
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    {testimonial.initial}
+                  </div>
+                )}
                 <div>
                   <h4 className="font-bold text-primary">{testimonial.name}</h4>
                   <p className="text-gray-600">Tutor do {testimonial.pet}</p>

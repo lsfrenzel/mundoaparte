@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "wouter";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +31,12 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const isActive = (path: string) => {
+    if (path === "/" && location === "/") return true;
+    if (path !== "/" && location.startsWith(path)) return true;
+    return false;
+  };
+
   return (
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -37,12 +45,12 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors ${
-              isScrolled ? 'bg-accent text-primary' : 'bg-primary text-white'
-            }`}>
-              <i className="fas fa-paw text-xl"></i>
-            </div>
+          <Link href="/" className="flex items-center space-x-3">
+            <img 
+              src="/attached_assets/Design-sem-nome_1754914557572.png" 
+              alt="Mundo à Parte Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h1 className={`text-xl font-bold transition-colors ${
                 isScrolled ? 'text-white' : 'text-primary'
@@ -55,54 +63,64 @@ export default function Header() {
                 Vila Mariana
               </p>
             </div>
-          </div>
+          </Link>
           
           <div className="hidden md:flex space-x-8">
-            <button 
-              onClick={() => scrollToSection('inicio')}
+            <Link 
+              href="/"
               className={`font-medium transition-all duration-300 hover:text-accent relative group ${
                 isScrolled ? 'text-white' : 'text-primary'
-              }`}
+              } ${isActive('/') ? 'text-accent' : ''}`}
             >
               Início
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('sobre')}
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                isActive('/') ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </Link>
+            <Link 
+              href="/sobre"
               className={`font-medium transition-all duration-300 hover:text-accent relative group ${
                 isScrolled ? 'text-white' : 'text-primary'
-              }`}
+              } ${isActive('/sobre') ? 'text-accent' : ''}`}
             >
               Sobre
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('servicos')}
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                isActive('/sobre') ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </Link>
+            <Link 
+              href="/servicos"
               className={`font-medium transition-all duration-300 hover:text-accent relative group ${
                 isScrolled ? 'text-white' : 'text-primary'
-              }`}
+              } ${isActive('/servicos') ? 'text-accent' : ''}`}
             >
               Serviços
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('depoimentos')}
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                isActive('/servicos') ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </Link>
+            <Link 
+              href="/depoimentos"
               className={`font-medium transition-all duration-300 hover:text-accent relative group ${
                 isScrolled ? 'text-white' : 'text-primary'
-              }`}
+              } ${isActive('/depoimentos') ? 'text-accent' : ''}`}
             >
               Depoimentos
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('contato')}
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                isActive('/depoimentos') ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </Link>
+            <Link 
+              href="/contato"
               className={`font-medium transition-all duration-300 hover:text-accent relative group ${
                 isScrolled ? 'text-white' : 'text-primary'
-              }`}
+              } ${isActive('/contato') ? 'text-accent' : ''}`}
             >
               Contato
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                isActive('/contato') ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </Link>
           </div>
 
           <button 
@@ -122,36 +140,51 @@ export default function Header() {
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
           <div className="px-4 py-6 space-y-4 bg-white bg-opacity-95 backdrop-blur-sm border-t border-gray-200">
-            <button 
-              onClick={() => scrollToSection('inicio')}
-              className="block w-full text-left py-3 px-4 text-primary font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors"
+            <Link 
+              href="/"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+                isActive('/') ? 'bg-accent text-primary' : 'text-primary'
+              }`}
             >
               <i className="fas fa-home mr-3"></i>Início
-            </button>
-            <button 
-              onClick={() => scrollToSection('sobre')}
-              className="block w-full text-left py-3 px-4 text-primary font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors"
+            </Link>
+            <Link 
+              href="/sobre"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+                isActive('/sobre') ? 'bg-accent text-primary' : 'text-primary'
+              }`}
             >
               <i className="fas fa-info-circle mr-3"></i>Sobre
-            </button>
-            <button 
-              onClick={() => scrollToSection('servicos')}
-              className="block w-full text-left py-3 px-4 text-primary font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors"
+            </Link>
+            <Link 
+              href="/servicos"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+                isActive('/servicos') ? 'bg-accent text-primary' : 'text-primary'
+              }`}
             >
               <i className="fas fa-heart mr-3"></i>Serviços
-            </button>
-            <button 
-              onClick={() => scrollToSection('depoimentos')}
-              className="block w-full text-left py-3 px-4 text-primary font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors"
+            </Link>
+            <Link 
+              href="/depoimentos"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+                isActive('/depoimentos') ? 'bg-accent text-primary' : 'text-primary'
+              }`}
             >
               <i className="fas fa-star mr-3"></i>Depoimentos
-            </button>
-            <button 
-              onClick={() => scrollToSection('contato')}
-              className="block w-full text-left py-3 px-4 text-primary font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors"
+            </Link>
+            <Link 
+              href="/contato"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+                isActive('/contato') ? 'bg-accent text-primary' : 'text-primary'
+              }`}
             >
               <i className="fas fa-envelope mr-3"></i>Contato
-            </button>
+            </Link>
             <div className="pt-4 border-t border-gray-200">
               <a 
                 href="https://wa.me/5511914645858" 

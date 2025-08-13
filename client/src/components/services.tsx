@@ -36,6 +36,12 @@ export default function Services() {
       title: "Cuidados Geriátricos",
       description: "Tratamentos especializados para pets idosos, focando na qualidade de vida e alívio de dores artríticas.",
       image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+    },
+    {
+      icon: "fas fa-wind",
+      title: "Ozonioterapia",
+      description: "Terapia com ozônio para fortalecer o sistema imunológico, acelerar cicatrização e combater infecções.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
     }
   ];
 

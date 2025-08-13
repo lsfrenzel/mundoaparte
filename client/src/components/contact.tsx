@@ -116,7 +116,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold">E-mail</h4>
-                  <p>contato@mundoaparte.com.br</p>
+                  <p>mundoaparte.vilamariana@gmail.com</p>
                 </div>
               </div>
 
@@ -126,7 +126,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold">Horário de Funcionamento</h4>
-                  <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 14h</p>
+                  <p>Segunda a Sexta: 8h às 21h<br />Sábado: 8h às 14h</p>
                 </div>
               </div>
             </div>
@@ -207,6 +207,7 @@ export default function Contact() {
                       <SelectItem value="acupuntura">Acupuntura</SelectItem>
                       <SelectItem value="reabilitacao">Reabilitação</SelectItem>
                       <SelectItem value="geriatrico">Cuidados Geriátricos</SelectItem>
+                      <SelectItem value="ozonioterapia">Ozonioterapia</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
