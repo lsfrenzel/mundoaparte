@@ -47,7 +47,7 @@ export default function Header() {
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
             <img 
-              src="/attached_assets/Design-sem-nome_1754914557572.png" 
+              src="/attached_assets/logopet-removebg-preview_1755800541296.png" 
               alt="Mundo à Parte Logo"
               className="w-12 h-12 object-contain"
             />

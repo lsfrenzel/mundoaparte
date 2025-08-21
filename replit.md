@@ -2,7 +2,7 @@
 
 This is a veterinary clinic website for "Mundo à Parte Vila Mariana," a specialized animal physiotherapy and rehabilitation clinic in São Paulo, Brazil. The application is a full-stack web solution built with React for the frontend and Express.js for the backend, featuring a lead generation contact form system for potential clients to book consultations and request services.
 
-The website showcases various veterinary services including hydrotherapy, physiotherapy, laser therapy, acupuncture, rehabilitation, geriatric care, and ozonotherapy for pets. It features separate pages for each menu item (Home, About, Services, Testimonials, Contact) with modern routing, responsive design, and smooth animations. Contact information includes updated hours (8am-9pm Mon-Fri), email (mundoaparte.vilamariana@gmail.com), and WhatsApp integration.
+The website showcases various veterinary services including hydrotherapy, physiotherapy, laser therapy, acupuncture, rehabilitation, geriatric care, and ozonotherapy for pets. It features separate pages for each menu item (Home, About, Services, Testimonials, Contact) with modern routing, responsive design, and smooth animations. The site includes an updated logo, video content on testimonials page, Google Maps integration with correct address (R. Bela Flor, 217 - Vila Mariana, SP), updated hours (8am-9pm Mon-Fri), email (mundoaparte.vilamariana@gmail.com), and WhatsApp integration.
 
 # User Preferences
 

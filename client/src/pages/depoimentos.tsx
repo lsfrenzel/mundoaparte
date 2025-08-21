@@ -70,9 +70,36 @@ export default function Depoimentos() {
           <h1 className="text-5xl font-bold mb-6" data-aos="fade-up">
             Depoimentos
           </h1>
-          <p className="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+          <p className="text-xl max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">
             Histórias reais de recuperação e satisfação dos nossos clientes
           </p>
+          
+          {/* Video Section */}
+          <div className="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <video 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-auto object-cover"
+                poster="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
+              >
+                <source 
+                  src="https://videos.pexels.com/video-files/4009720/4009720-hd_1920_1080_25fps.mp4" 
+                  type="video/mp4" 
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" 
+                  alt="Pets felizes após tratamento" 
+                  className="w-full"
+                />
+              </video>
+            </div>
+            <p className="text-white mt-4 text-sm opacity-90">
+              Veja como nossos tratamentos transformam a vida dos pets
+            </p>
+          </div>
         </div>
       </section>
 
