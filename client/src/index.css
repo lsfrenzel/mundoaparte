@@ -143,5 +143,22 @@ html {
     .hero-image {
       background-attachment: scroll;
     }
+    
+    .mobile-header-height {
+      min-height: 70px;
+    }
+    
+    .mobile-menu-container {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+  }
+  
+  /* WhatsApp button improvements */
+  .whatsapp-float {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
