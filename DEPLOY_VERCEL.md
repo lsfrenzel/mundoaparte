@@ -19,7 +19,7 @@
 4. Selecione o repositório do projeto
 5. Configure as seguintes opções:
    - **Framework Preset**: Other
-   - **Build Command**: `vite build`
+   - **Build Command**: `vite build && cp -r public/* dist/public/ 2>/dev/null || true`
    - **Output Directory**: `dist/public`
    - **Install Command**: `npm install`
 

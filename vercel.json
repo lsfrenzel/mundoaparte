@@ -1,26 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "client/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "../dist/public"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/attached_assets/(.*)",
-      "dest": "/attached_assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/public/$1"
-    }
-  ],
-  "installCommand": "npm install",
-  "buildCommand": "vite build",
-  "outputDirectory": "dist/public",
-  "framework": null
+  "buildCommand": "vite build && cp -r public/* dist/public/ 2>/dev/null || true",
+  "outputDirectory": "dist/public"
 }
