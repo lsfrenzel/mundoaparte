@@ -7,6 +7,7 @@ import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import ScrollToTop from "@/components/scroll-to-top";
 import { initializeAnimations } from "@/lib/animations";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <WhatsAppFloat />
+      <ScrollToTop />
     </div>
   );
 }

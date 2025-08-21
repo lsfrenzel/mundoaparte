@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import ScrollToTop from "@/components/scroll-to-top";
 import Contact from "@/components/contact";
 import { initializeAnimations } from "@/lib/animations";
 
@@ -33,6 +34,7 @@ export default function Contato() {
 
       <Footer />
       <WhatsAppFloat />
+      <ScrollToTop />
     </div>
   );
 }

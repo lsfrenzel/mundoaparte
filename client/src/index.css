@@ -200,4 +200,13 @@ html {
       padding-bottom: 80px;
     }
   }
+  
+  /* Scroll to top button styling */
+  .scroll-to-top {
+    transition: all 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    transform: translateY(-2px);
+  }
 }
