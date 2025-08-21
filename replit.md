@@ -19,13 +19,14 @@ Preferred communication style: Simple, everyday language.
 - **Animations**: AOS (Animate On Scroll) library and GSAP for interactive animations
 - **Form Handling**: React Hook Form with Zod validation for the contact form
 - **Navigation**: Active page highlighting with smooth mobile menu animations
+- **Deployment**: Optimized for Vercel hosting with static build and serverless functions
 
 ## Backend Architecture
-- **Framework**: Express.js with TypeScript
+- **Development**: Express.js with TypeScript for local development
+- **Production**: Vercel serverless functions for contact form processing
 - **API Design**: RESTful API with JSON responses
-- **Request Handling**: Standard Express middleware for JSON parsing and URL encoding
-- **Error Handling**: Centralized error middleware with proper HTTP status codes
-- **Development**: Custom Vite integration for hot reloading in development mode
+- **Error Handling**: Proper HTTP status codes and error messages
+- **CORS**: Configured for cross-origin requests in production
 
 ## Data Storage
 - **Database**: PostgreSQL configured through Drizzle ORM
@@ -56,6 +57,8 @@ Preferred communication style: Simple, everyday language.
 ## Build and Development
 - **Build Tool**: Vite for fast development and optimized production builds
 - **Code Splitting**: Automatic code splitting with Vite
-- **Static Assets**: Served through Express in production
+- **Static Assets**: Served from public/ directory for Vercel compatibility
 - **Type Checking**: TypeScript with strict mode enabled
 - **Development Server**: Express with Vite middleware for hot module replacement
+- **Production Deployment**: Vercel with static build and serverless functions
+- **Contact Form**: Serverless function at /api/contact.js for form processing
