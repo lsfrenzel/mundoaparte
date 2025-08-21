@@ -138,54 +138,54 @@ export default function Header() {
         </nav>
         
         {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 overflow-hidden absolute left-0 right-0 top-full z-40 ${
-          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        <div className={`md:hidden transition-all duration-300 overflow-hidden absolute left-0 right-0 top-full z-20 ${
+          isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="px-3 sm:px-4 py-6 space-y-4 bg-white bg-opacity-98 backdrop-blur-sm border-t border-gray-200 shadow-lg mobile-menu-container">
+          <div className="px-3 sm:px-4 py-8 space-y-6 bg-white bg-opacity-98 backdrop-blur-sm border-t border-gray-200 shadow-lg mobile-menu-container min-h-[400px]">
             <Link 
               href="/"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+              className={`block w-full text-left py-4 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors text-lg ${
                 isActive('/') ? 'bg-accent text-primary' : 'text-primary'
               }`}
             >
-              <i className="fas fa-home mr-3"></i>Início
+              <i className="fas fa-home mr-3 text-lg"></i>Início
             </Link>
             <Link 
               href="/sobre"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+              className={`block w-full text-left py-4 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors text-lg ${
                 isActive('/sobre') ? 'bg-accent text-primary' : 'text-primary'
               }`}
             >
-              <i className="fas fa-info-circle mr-3"></i>Sobre
+              <i className="fas fa-info-circle mr-3 text-lg"></i>Sobre
             </Link>
             <Link 
               href="/servicos"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+              className={`block w-full text-left py-4 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors text-lg ${
                 isActive('/servicos') ? 'bg-accent text-primary' : 'text-primary'
               }`}
             >
-              <i className="fas fa-heart mr-3"></i>Serviços
+              <i className="fas fa-heart mr-3 text-lg"></i>Serviços
             </Link>
             <Link 
               href="/depoimentos"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+              className={`block w-full text-left py-4 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors text-lg ${
                 isActive('/depoimentos') ? 'bg-accent text-primary' : 'text-primary'
               }`}
             >
-              <i className="fas fa-star mr-3"></i>Depoimentos
+              <i className="fas fa-star mr-3 text-lg"></i>Depoimentos
             </Link>
             <Link 
               href="/contato"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block w-full text-left py-3 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors ${
+              className={`block w-full text-left py-4 px-4 font-medium hover:bg-accent hover:text-primary rounded-lg transition-colors text-lg ${
                 isActive('/contato') ? 'bg-accent text-primary' : 'text-primary'
               }`}
             >
-              <i className="fas fa-envelope mr-3"></i>Contato
+              <i className="fas fa-envelope mr-3 text-lg"></i>Contato
             </Link>
             <div className="pt-4 border-t border-gray-200">
               <a 

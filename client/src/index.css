@@ -182,7 +182,9 @@ html {
   
   /* Mobile menu overlay fix */
   .mobile-menu-container {
-    z-index: 45;
+    z-index: 15;
+    max-height: 80vh;
+    overflow-y: auto;
   }
   
   /* Ensure WhatsApp button stays visible */
@@ -190,7 +192,12 @@ html {
     .whatsapp-float {
       right: 8px !important;
       bottom: 16px !important;
-      z-index: 35 !important;
+      z-index: 60 !important;
+      position: fixed !important;
+    }
+    
+    .mobile-menu-container {
+      padding-bottom: 80px;
     }
   }
 }
