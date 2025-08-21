@@ -20,7 +20,7 @@ export default function WhatsAppFloat() {
       href="https://wa.me/5511914645858" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="whatsapp-float fixed w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bottom-4 right-3 sm:bottom-6 sm:right-4 md:bottom-8 md:right-8 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center text-lg sm:text-xl md:text-2xl shadow-lg hover:shadow-xl transition-all duration-300 z-40"
+      className="whatsapp-float fixed w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bottom-4 right-2 sm:bottom-6 sm:right-4 md:bottom-8 md:right-8 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center text-lg sm:text-xl md:text-2xl shadow-lg hover:shadow-xl transition-all duration-300 z-30"
       data-aos="zoom-in" 
       data-aos-delay="1000"
       aria-label="WhatsApp"
