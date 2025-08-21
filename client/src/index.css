@@ -145,11 +145,22 @@ html {
     }
     
     .mobile-header-height {
-      min-height: 70px;
+      min-height: 60px;
     }
     
     .mobile-menu-container {
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    
+    .container {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      max-width: 100%;
+    }
+    
+    /* Prevent horizontal overflow */
+    body {
+      overflow-x: hidden;
     }
   }
   

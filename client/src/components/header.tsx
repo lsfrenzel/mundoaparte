@@ -43,9 +43,9 @@ export default function Header() {
         isScrolled ? 'header-scrolled' : 'header-bg'
       }`}
     >
-      <div className="container mx-auto px-4 py-3 sm:py-4">
-        <nav className="flex items-center justify-between min-h-[60px] mobile-header-height">
-          <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
+      <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
+        <nav className="flex items-center justify-between min-h-[60px] mobile-header-height w-full">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
             <img 
               src="/attached_assets/logopet-removebg-preview_1755800541296.png" 
               alt="Mundo à Parte Logo"
@@ -125,12 +125,12 @@ export default function Header() {
 
           <button 
             onClick={toggleMobileMenu}
-            className={`md:hidden transition-colors p-3 rounded-lg hover:bg-opacity-20 hover:bg-white flex items-center justify-center w-12 h-12 ${
+            className={`md:hidden transition-colors p-2 rounded-lg hover:bg-opacity-20 hover:bg-white flex items-center justify-center w-10 h-10 flex-shrink-0 ${
               isScrolled ? 'text-white' : 'text-primary'
             }`}
             aria-label="Menu"
           >
-            <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-lg transition-transform duration-300 ${
+            <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-base transition-transform duration-300 ${
               isMobileMenuOpen ? 'rotate-90' : 'rotate-0'
             }`}></i>
           </button>
@@ -140,7 +140,7 @@ export default function Header() {
         <div className={`md:hidden transition-all duration-300 overflow-hidden absolute left-0 right-0 top-full ${
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="px-4 py-6 space-y-4 bg-white bg-opacity-95 backdrop-blur-sm border-t border-gray-200 shadow-lg mobile-menu-container">
+          <div className="px-3 sm:px-4 py-6 space-y-4 bg-white bg-opacity-95 backdrop-blur-sm border-t border-gray-200 shadow-lg mobile-menu-container">
             <Link 
               href="/"
               onClick={() => setIsMobileMenuOpen(false)}
