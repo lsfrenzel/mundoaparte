@@ -50,6 +50,16 @@ export default function Header() {
               src="/attached_assets/logopet-removebg-preview_1755800541296.png" 
               alt="Mundo à Parte Logo"
               className="w-12 h-12 object-contain"
+              onLoad={() => console.log('Logo carregada com sucesso')}
+              onError={(e) => {
+                console.error('Erro ao carregar logo:', e.currentTarget.src);
+                // Fallback para ícone
+                e.currentTarget.style.display = 'none';
+                const icon = document.createElement('div');
+                icon.className = 'w-12 h-12 bg-primary rounded-full flex items-center justify-center';
+                icon.innerHTML = '<i class="fas fa-paw text-white text-xl"></i>';
+                e.currentTarget.parentNode?.appendChild(icon);
+              }}
             />
             <div>
               <h1 className={`text-xl font-bold transition-colors ${
