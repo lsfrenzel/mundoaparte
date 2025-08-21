@@ -2,30 +2,30 @@ export default function Footer() {
   return (
     <>
       {/* Map Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4" data-aos="fade-up">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4" data-aos="fade-up">
               Nossa Localização
             </h2>
-            <p className="text-xl text-gray-700" data-aos="fade-up" data-aos-delay="200">
+            <p className="text-lg sm:text-xl text-gray-700" data-aos="fade-up" data-aos-delay="200">
               Venha nos conhecer na Vila Mariana
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div data-aos="fade-right">
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold text-primary mb-6">Como Chegar</h3>
+              <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">Como Chegar</h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-map-marker-alt text-white text-sm"></i>
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 sm:mr-4 mt-1 flex-shrink-0">
+                      <i className="fas fa-map-marker-alt text-white text-xs sm:text-sm"></i>
                     </div>
                     <div>
-                      <h4 className="font-bold">Endereço</h4>
-                      <p>R. Bela Flor, 217 - Vila Mariana<br />São Paulo - SP</p>
+                      <h4 className="font-bold text-sm sm:text-base">Endereço</h4>
+                      <p className="text-sm sm:text-base">R. Bela Flor, 217 - Vila Mariana<br />São Paulo - SP</p>
                     </div>
                   </div>
 

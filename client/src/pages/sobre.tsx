@@ -62,22 +62,22 @@ export default function Sobre() {
                 proporcionamos o melhor cuidado para a recuperação do seu pet.
               </p>
               
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">500+</div>
-                  <p className="text-gray-600">Pets Tratados</p>
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
+                <div className="text-center p-4 bg-cream rounded-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-primary">500+</div>
+                  <p className="text-sm sm:text-base text-gray-600">Pets Tratados</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">5</div>
-                  <p className="text-gray-600">Anos de Experiência</p>
+                <div className="text-center p-4 bg-cream rounded-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-primary">5+</div>
+                  <p className="text-sm sm:text-base text-gray-600">Anos de Experiência</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">98%</div>
-                  <p className="text-gray-600">Satisfação</p>
+                <div className="text-center p-4 bg-accent rounded-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-primary">100%</div>
+                  <p className="text-sm sm:text-base text-primary font-semibold">Satisfação</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">24h</div>
-                  <p className="text-gray-600">Suporte</p>
+                <div className="text-center p-4 bg-cream rounded-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-primary">24h</div>
+                  <p className="text-sm sm:text-base text-gray-600">Suporte</p>
                 </div>
               </div>
             </div>

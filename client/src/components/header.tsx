@@ -45,19 +45,19 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="/attached_assets/logopet-removebg-preview_1755800541296.png" 
               alt="Mundo à Parte Logo"
-              className="w-12 h-12 object-contain"
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
             <div>
-              <h1 className={`text-xl font-bold transition-colors ${
+              <h1 className={`text-lg sm:text-xl font-bold transition-colors ${
                 isScrolled ? 'text-white' : 'text-primary'
               }`}>
                 Mundo à Parte
               </h1>
-              <p className={`text-sm transition-colors ${
+              <p className={`text-xs sm:text-sm transition-colors ${
                 isScrolled ? 'text-gray-200' : 'text-gray-600'
               }`}>
                 Vila Mariana

@@ -80,61 +80,61 @@ export default function Contact() {
   };
 
   return (
-    <section id="contato" className="py-20 gradient-bg text-white">
+    <section id="contato" className="py-12 sm:py-20 gradient-bg text-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           <div data-aos="fade-right">
-            <h2 className="text-4xl font-bold mb-6">Entre em Contato</h2>
-            <p className="text-xl mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Entre em Contato</h2>
+            <p className="text-lg sm:text-xl mb-6 sm:mb-8">
               Estamos prontos para cuidar do seu pet. Agende uma consulta e veja como podemos ajudar na recuperação.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-4">
-                  <i className="fas fa-map-marker-alt"></i>
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-start sm:items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-3 sm:mr-4 flex-shrink-0">
+                  <i className="fas fa-map-marker-alt text-sm sm:text-base"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold">Endereço</h4>
-                  <p>R. Bela Flor, 217 - Vila Mariana, São Paulo - SP, 04128-050</p>
+                  <h4 className="font-bold text-sm sm:text-base">Endereço</h4>
+                  <p className="text-sm sm:text-base">R. Bela Flor, 217 - Vila Mariana<br />São Paulo - SP, 04128-050</p>
                 </div>
               </div>
 
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-4">
-                  <i className="fas fa-phone"></i>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-3 sm:mr-4">
+                  <i className="fas fa-phone text-sm sm:text-base"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold">Telefone</h4>
-                  <p>(11) 91464-5858</p>
+                  <h4 className="font-bold text-sm sm:text-base">Telefone</h4>
+                  <p className="text-sm sm:text-base">(11) 91464-5858</p>
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-4">
-                  <i className="fas fa-envelope"></i>
+              <div className="flex items-start sm:items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-3 sm:mr-4 flex-shrink-0">
+                  <i className="fas fa-envelope text-sm sm:text-base"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold">E-mail</h4>
-                  <p>mundoaparte.vilamariana@gmail.com</p>
+                  <h4 className="font-bold text-sm sm:text-base">E-mail</h4>
+                  <p className="text-sm sm:text-base break-all">mundoaparte.vilamariana@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-4">
-                  <i className="fas fa-clock"></i>
+              <div className="flex items-start sm:items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-full flex items-center justify-center text-primary mr-3 sm:mr-4 flex-shrink-0">
+                  <i className="fas fa-clock text-sm sm:text-base"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold">Horário de Funcionamento</h4>
-                  <p>Segunda a Sexta: 8h às 21h<br />Sábado: 8h às 14h</p>
+                  <h4 className="font-bold text-sm sm:text-base">Horário de Funcionamento</h4>
+                  <p className="text-sm sm:text-base">Segunda a Sexta: 8h às 21h<br />Sábado: 8h às 14h</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div data-aos="fade-left">
-            <div className="bg-white rounded-2xl p-8 text-gray-800">
-              <h3 className="text-2xl font-bold text-primary mb-6">Agende sua Consulta</h3>
+            <div className="bg-white rounded-2xl p-6 sm:p-8 text-gray-800">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">Agende sua Consulta</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">Nome do Tutor *</label>

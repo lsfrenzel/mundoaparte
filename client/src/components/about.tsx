@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-12 sm:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div data-aos="fade-right">
             <div className="rounded-2xl shadow-lg overflow-hidden">
               <video 
@@ -26,32 +26,32 @@ export default function About() {
             </div>
           </div>
           <div data-aos="fade-left">
-            <h2 className="text-4xl font-bold text-primary mb-6">Mundo à Parte Vila Mariana</h2>
-            <p className="text-lg text-gray-700 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 sm:mb-6">Mundo à Parte Vila Mariana</h2>
+            <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
               Nossa clínica é especializada em fisioterapia e reabilitação animal, oferecendo 
               tratamentos modernos e personalizados para cães e gatos que precisam de cuidados especiais.
             </p>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
               Com uma equipe altamente qualificada e equipamentos de última geração, 
               proporcionamos o melhor cuidado para a recuperação do seu pet.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">500+</div>
-                <p className="text-gray-600">Pets Tratados</p>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="text-center p-4 bg-cream rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">500+</div>
+                <p className="text-sm sm:text-base text-gray-600">Pets Tratados</p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">5</div>
-                <p className="text-gray-600">Anos de Experiência</p>
+              <div className="text-center p-4 bg-cream rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">5+</div>
+                <p className="text-sm sm:text-base text-gray-600">Anos de Experiência</p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">98%</div>
-                <p className="text-gray-600">Satisfação</p>
+              <div className="text-center p-4 bg-accent rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">100%</div>
+                <p className="text-sm sm:text-base text-primary font-semibold">Satisfação</p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">24h</div>
-                <p className="text-gray-600">Suporte</p>
+              <div className="text-center p-4 bg-cream rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary">24h</div>
+                <p className="text-sm sm:text-base text-gray-600">Suporte</p>
               </div>
             </div>
           </div>
