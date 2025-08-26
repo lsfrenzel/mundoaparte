@@ -102,20 +102,27 @@ export default function BanhoTosa() {
               </div>
             </div>
             
-            {/* Spline 3D Animation */}
+            {/* Hero Video */}
             <div className="relative" data-aos="fade-left" data-aos-delay="300">
-              <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
-                <iframe
-                  src="https://my.spline.design/grumpycat-PQqps8L82rPkrF7HuEBTLzmc/"
-                  className="w-full h-full border-0"
-                  title="Animação 3D de Gato"
-                  loading="lazy"
-                  style={{ 
-                    border: 'none',
-                    borderRadius: '16px',
-                    background: 'transparent'
-                  }}
-                ></iframe>
+              <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop"
+                >
+                  <source src="https://cdn.pixabay.com/video/2023/04/18/158826-822043067_large.mp4" type="video/mp4" />
+                  <source src="https://cdn.pixabay.com/video/2022/07/15/124195-730463693_large.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div className="absolute inset-0 bg-black bg-opacity-20 rounded-2xl"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-sm opacity-90">
+                    Veja nossos profissionais cuidando com carinho dos pets
+                  </p>
+                </div>
               </div>
             </div>
           </div>
