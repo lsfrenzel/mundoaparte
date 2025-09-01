@@ -21,28 +21,34 @@ export default function Home() {
       <Header />
       <Hero />
       
-      {/* Clinic Showcase Section */}
+      {/* Video Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-6" data-aos="fade-up">
-              Nossa Clínica Moderna
+              Conheça Nossa Clínica
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-              Instalações completas e equipamentos de última geração para o melhor atendimento ao seu pet
+              Veja como cuidamos dos seus pets com carinho, profissionalismo e dedicação
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/attached_assets/image_1756737469952.png"
-                alt="Interior da Clínica Mundo à Parte Vila Mariana"
-                className="w-full h-auto object-cover"
-              />
+              <video
+                className="w-full h-auto"
+                controls
+                poster="/attached_assets/image_1756737469952.png"
+                preload="metadata"
+                style={{ maxHeight: '500px' }}
+              >
+                <source src="/fisioterapia_vilamariana_1756736752678.mp4" type="video/mp4" />
+                <source src="/attached_assets/fisioterapia_vilamariana_1756736752678.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
               <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-2 rounded-lg">
                 <p className="text-sm">
-                  Equipamentos modernos e ambiente acolhedor
+                  Mundo à Parte Vila Mariana - Fisioterapia Animal
                 </p>
               </div>
             </div>
