@@ -41,7 +41,7 @@ export default function Sobre() {
                   poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
                 >
                   <source 
-                    src="https://videos.pexels.com/video-files/8518275/8518275-hd_1920_1080_25fps.mp4" 
+                    src="https://drive.google.com/file/d/137gHpSHzRyL__8yDjfb3GBYLeiQ28E6R/preview" 
                     type="video/mp4" 
                   />
                   <img 
