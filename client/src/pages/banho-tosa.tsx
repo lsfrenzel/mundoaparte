@@ -111,16 +111,16 @@ export default function BanhoTosa() {
                   muted
                   loop
                   playsInline
-                  poster="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop"
+                  poster="/attached_assets/image_1756737469952.png"
                 >
-                  <source src="https://cdn.pixabay.com/video/2023/04/18/158826-822043067_large.mp4" type="video/mp4" />
-                  <source src="https://cdn.pixabay.com/video/2022/07/15/124195-730463693_large.mp4" type="video/mp4" />
+                  <source src="/pet_shop_vilamariana_1756738328191.mp4" type="video/mp4" />
+                  <source src="/attached_assets/pet_shop_vilamariana_1756738328191.mp4" type="video/mp4" />
                   Seu navegador não suporta vídeos HTML5.
                 </video>
                 <div className="absolute inset-0 bg-black bg-opacity-20 rounded-2xl"></div>
                 <div className="absolute bottom-4 left-4 text-white">
                   <p className="text-sm opacity-90">
-                    Veja nossos profissionais cuidando com carinho dos pets
+                    Pet Shop Vila Mariana - Serviços de banho e tosa
                   </p>
                 </div>
               </div>
