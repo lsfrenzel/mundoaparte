@@ -106,7 +106,7 @@ export default function BanhoTosa() {
             <div className="relative" data-aos="fade-left" data-aos-delay="300">
               <div className="relative w-full h-96 md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-black hero-video-mobile">
                 <video
-                  className="w-full h-full object-contain md:object-cover"
+                  className="w-full h-full object-contain"
                   controls
                   poster="/attached_assets/image_1756737469952.png"
                   preload="metadata"
