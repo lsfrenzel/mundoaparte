@@ -33,22 +33,18 @@ export default function Sobre() {
             <div data-aos="fade-right">
               <div className="rounded-2xl shadow-lg overflow-hidden">
                 <video 
-                  autoPlay 
-                  muted 
-                  loop 
-                  playsInline
-                  className="w-full h-auto object-cover"
-                >
-                <source 
-                  src="https://drive.google.com/uc?export=download&id=137gHpSHzRyL__8yDjfb3GBYLeiQ28E6R" 
-                  type="video/mp4" 
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Clínica veterinária moderna" 
-                  className="w-full"
-                />
-</video>
+                      autoplay 
+                      muted 
+                      loop 
+                      playsinline
+                      class="w-full h-auto object-cover"
+                    >
+                      <source 
+                        src="https://drive.google.com/uc?export=download&id=137gHpSHzRyL__8yDjfb3GBYLeiQ28E6R" 
+                        type="video/mp4" 
+                      />
+                    </video>
+
 
               </div>
             </div>
