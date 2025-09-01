@@ -267,6 +267,15 @@ export default function BanhoTosa() {
               <i className="fas fa-phone mr-3 text-xl"></i>
               Ligar Agora
             </a>
+            <a
+              href="https://www.instagram.com/mundopet.vilamariana?igsh=MXNra3Z3bW1qZWJ2bQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full transition-colors shadow-lg hover:shadow-xl"
+            >
+              <i className="fab fa-instagram mr-3 text-xl"></i>
+              Seguir no Instagram
+            </a>
           </div>
         </div>
       </section>
