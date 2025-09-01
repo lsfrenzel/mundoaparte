@@ -6,20 +6,22 @@ export default function About() {
           <div data-aos="fade-right">
             <div className="rounded-2xl shadow-lg overflow-hidden">
               <video 
-                autoPlay 
-                muted 
-                loop 
-                playsInline
+                controls
                 className="w-full h-auto object-cover"
-                poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                poster="/attached_assets/image_1756737469952.png"
+                preload="metadata"
               >
                 <source 
-                  src="https://videos.pexels.com/video-files/8518275/8518275-hd_1920_1080_25fps.mp4" 
+                  src="/attached_assets/fisioterapia_vilamariana_1756736752678.mp4" 
+                  type="video/mp4" 
+                />
+                <source 
+                  src="/fisioterapia_vilamariana_1756736752678.mp4" 
                   type="video/mp4" 
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Clínica veterinária moderna" 
+                  src="/attached_assets/image_1756737469952.png" 
+                  alt="Mundo à Parte Vila Mariana - Interior da Clínica" 
                   className="w-full"
                 />
               </video>
