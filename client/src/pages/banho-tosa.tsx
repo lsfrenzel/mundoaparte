@@ -103,23 +103,20 @@ export default function BanhoTosa() {
             </div>
             
             {/* Hero Video */}
-            <div className="relative flex justify-center" data-aos="fade-left" data-aos-delay="300">
-              <div className="relative w-full max-w-sm lg:max-w-md rounded-2xl overflow-hidden shadow-2xl bg-black">
+            <div className="relative" data-aos="fade-left" data-aos-delay="300">
+              <div className="relative w-full h-96 md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-black hero-video-mobile">
                 <video
-                  className="w-full h-auto"
+                  className="w-full h-full object-contain md:object-cover"
                   controls
                   poster="/attached_assets/image_1756737469952.png"
                   preload="metadata"
-                  style={{ aspectRatio: '9/16', objectFit: 'contain' }}
                 >
                   <source src="/pet_shop_vilamariana_1756738328191.mp4" type="video/mp4" />
                   <source src="/attached_assets/pet_shop_vilamariana_1756738328191.mp4" type="video/mp4" />
                   Seu navegador não suporta vídeos HTML5.
                 </video>
-                <div className="absolute bottom-4 left-4 text-white bg-black bg-opacity-50 px-2 py-1 rounded">
-                  <p className="text-xs">
-                    🎵 Toque para reproduzir com áudio
-                  </p>
+                <div className="absolute bottom-4 left-4 text-white bg-black bg-opacity-50 px-2 py-1 rounded text-xs">
+                  Toque para reproduzir com áudio
                 </div>
               </div>
             </div>

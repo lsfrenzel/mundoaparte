@@ -209,4 +209,15 @@ html {
   .scroll-to-top:hover {
     transform: translateY(-2px);
   }
+  
+  /* Mobile video adjustments */
+  @media (max-width: 767px) {
+    .hero-video-mobile {
+      height: 70vh !important;
+    }
+    
+    .hero-video-mobile video {
+      object-fit: contain !important;
+    }
+  }
 }
