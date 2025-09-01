@@ -38,18 +38,18 @@ export default function Sobre() {
                   loop 
                   playsInline
                   className="w-full h-auto object-cover"
-                  poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
                 >
-                  <source 
-                    src="https://drive.google.com/file/d/137gHpSHzRyL__8yDjfb3GBYLeiQ28E6R/preview" 
-                    type="video/mp4" 
-                  />
-                  <img 
-                    src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                    alt="Clínica veterinária moderna" 
-                    className="w-full"
-                  />
-                </video>
+                <source 
+                  src="https://drive.google.com/uc?export=download&id=137gHpSHzRyL__8yDjfb3GBYLeiQ28E6R" 
+                  type="video/mp4" 
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Clínica veterinária moderna" 
+                  className="w-full"
+                />
+</video>
+
               </div>
             </div>
             <div data-aos="fade-left">
