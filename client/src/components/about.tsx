@@ -8,19 +8,19 @@ export default function About() {
               <video 
                 controls
                 className="w-full h-auto object-cover"
-                poster="/attached_assets/image_1756737469952.png"
+                poster="/image_1756737469952.png"
                 preload="metadata"
               >
-                <source 
-                  src="/attached_assets/fisioterapia_vilamariana_1756736752678.mp4" 
-                  type="video/mp4" 
-                />
                 <source 
                   src="/fisioterapia_vilamariana_1756736752678.mp4" 
                   type="video/mp4" 
                 />
+                <source 
+                  src="/attached_assets/fisioterapia_vilamariana_1756736752678.mp4" 
+                  type="video/mp4" 
+                />
                 <img 
-                  src="/attached_assets/image_1756737469952.png" 
+                  src="/image_1756737469952.png" 
                   alt="Mundo à Parte Vila Mariana - Interior da Clínica" 
                   className="w-full"
                 />

@@ -90,10 +90,10 @@ export default function Footer() {
                 Especializada em fisioterapia e reabilitação animal, oferecendo cuidados personalizados para a recuperação do seu pet.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-accent transition-colors">
+                <a href="https://www.facebook.com/mundoaparte.vilamariana" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent transition-colors">
                   <i className="fab fa-facebook text-xl"></i>
                 </a>
-                <a href="#" className="text-gray-300 hover:text-accent transition-colors">
+                <a href="https://www.instagram.com/mundopet.vilamariana?igsh=MXNra3Z3bW1qZWJ2bQ==" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent transition-colors">
                   <i className="fab fa-instagram text-xl"></i>
                 </a>
                 <a href="https://wa.me/5511914645858" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent transition-colors">

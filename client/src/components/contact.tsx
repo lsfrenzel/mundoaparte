@@ -31,7 +31,7 @@ export default function Contact() {
 
   const submitLead = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      const response = await apiRequest('POST', '/api/contact', data);
+      const response = await apiRequest('POST', '/api/leads', data);
       return response.json();
     },
     onSuccess: () => {
