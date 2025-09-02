@@ -44,7 +44,7 @@ export default function Servicos() {
       icon: "fas fa-heartbeat",
       title: "Reabilitação",
       description: "Programas completos de recuperação pós-cirúrgica e tratamento de lesões ortopédicas e neurológicas.",
-      image: "https://images.unsplash.com/photo-1605020420620-20c943cc4669?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+      image: "/fisio_1756842516301.jpeg",
       details: "Planos de tratamento integrados que combinam múltiplas terapias para maximizar a recuperação e retorno às atividades normais."
     },
     {
@@ -58,7 +58,7 @@ export default function Servicos() {
       icon: "fas fa-wind",
       title: "Ozonioterapia",
       description: "Terapia com ozônio para fortalecer o sistema imunológico, acelerar cicatrização e combater infecções.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+      image: "/fisio2_1756842575712.jpeg",
       details: "Tratamento inovador que utiliza as propriedades do ozônio para melhorar a oxigenação celular, estimular o sistema imunológico e acelerar processos de cura."
     }
   ];
@@ -97,7 +97,7 @@ export default function Servicos() {
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="rounded-lg w-full mb-4 object-cover h-48"
+                  className={`rounded-lg w-full mb-4 h-48 ${service.title === 'Acupuntura' ? 'object-center object-cover' : 'object-cover'}`}
                 />
                 <p className="text-gray-700 mb-4">
                   {service.description}

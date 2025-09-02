@@ -15,28 +15,28 @@ export default function BanhoTosa() {
       title: "Banho Relaxante",
       description: "Banho com produtos hipoalergênicos e shampoos terapêuticos especiais para cada tipo de pelagem.",
       icon: "fas fa-bath",
-      image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop",
+      image: "/banhoetosa1_1756842619907.jpeg",
       details: "Inclui escovação, limpeza de ouvidos e corte de unhas"
     },
     {
       title: "Tosa Higiênica",
       description: "Tosa especializada em áreas sensíveis para manter a higiene e saúde do seu pet.",
       icon: "fas fa-cut",
-      image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop",
+      image: "/banhoetosa4_1756842619908.jpeg",
       details: "Foco em regiões íntimas, patas e região dos olhos"
     },
     {
       title: "Tosa Completa",
       description: "Serviço completo de embelezamento com cortes personalizados para cada raça.",
       icon: "fas fa-scissors",
-      image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop",
+      image: "/banhotosa_1756842655032.jpeg",
       details: "Corte estilizado, acabamento profissional e hidratação"
     },
     {
       title: "Spa para Pets",
       description: "Tratamento completo de relaxamento com aromaterapia e massagem terapêutica.",
       icon: "fas fa-spa",
-      image: "https://images.unsplash.com/photo-1615751072497-5f5169febe17?w=400&h=300&fit=crop",
+      image: "/banhoetosa1_1756842619907.jpeg",
       details: "Experiência única de bem-estar para seu pet",
       highlight: true
     },
@@ -44,14 +44,14 @@ export default function BanhoTosa() {
       title: "Hidratação Profunda",
       description: "Tratamento intensivo para pelagem ressecada com produtos naturais.",
       icon: "fas fa-tint",
-      image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop",
+      image: "/banhoetosa4_1756842619908.jpeg",
       details: "Restaura o brilho natural e maciez da pelagem"
     },
     {
       title: "Limpeza de Ouvidos",
       description: "Limpeza especializada para prevenir infecções e manter a saúde auditiva.",
       icon: "fas fa-stethoscope",
-      image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop",
+      image: "/banhotosa_1756842655032.jpeg",
       details: "Procedimento delicado com produtos específicos"
     }
   ];
@@ -223,9 +223,9 @@ export default function BanhoTosa() {
             
             <div className="relative" data-aos="fade-left">
               <img 
-                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop" 
+                src="/banhoetosa1_1756842619907.jpeg" 
                 alt="Pet feliz após banho e tosa"
-                className="rounded-2xl shadow-lg"
+                className="rounded-2xl shadow-lg object-cover w-full h-96"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-lg">
                 <div className="text-center">
