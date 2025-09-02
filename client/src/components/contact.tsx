@@ -31,7 +31,21 @@ export default function Contact() {
 
   const submitLead = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      const response = await apiRequest('POST', '/api/leads', data);
+      // Use Vercel API endpoint for production
+      const endpoint = import.meta.env.PROD ? '/api/contact' : '/api/leads';
+      
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+      
       return response.json();
     },
     onSuccess: () => {
