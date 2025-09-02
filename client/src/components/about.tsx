@@ -29,14 +29,12 @@ export default function About() {
           </div>
           <div data-aos="fade-left">
             <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 sm:mb-6">Clínica de Fisioterapia Veterinária - Vila Mariana</h2>
-            <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
-              Nossa clínica é especializada em fisioterapia e reabilitação animal, oferecendo 
-              tratamentos modernos e personalizados para cães e gatos que precisam de cuidados especiais.
-            </p>
-            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
-              Com uma equipe altamente qualificada e equipamentos de última geração, 
-              proporcionamos o melhor cuidado para a recuperação do seu pet.
-            </p>
+            <div className="space-y-4">
+              <p className="text-base sm:text-lg text-gray-700">
+                Bem-vindos à nossa clínica especializada em fisioterapia e reabilitação veterinária. 
+                Oferecemos cuidados completos e personalizados para seus pets.
+              </p>
+            </div>
             
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
               <div className="text-center p-4 bg-cream rounded-lg">
@@ -59,61 +57,7 @@ export default function About() {
           </div>
         </div>
         
-        {/* Seção sobre a Dra. Fátima */}
-        <div className="mt-16 sm:mt-20">
-          <div className="text-center mb-8 sm:mb-12">
-            <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-4" data-aos="fade-up">
-              Nossa Fundadora
-            </h3>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div data-aos="fade-right">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img 
-                    src="/fatima_1756813549083.jpeg" 
-                    alt="Dra. Fátima Bollini Leonard - Veterinária Especialista" 
-                    className="w-full h-64 object-cover"
-                  />
-                </div>
-                <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img 
-                    src="/louisefatima_1756813549081.jpeg" 
-                    alt="Dra. Fátima com paciente" 
-                    className="w-full h-64 object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            
-            <div data-aos="fade-left">
-              <h4 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">
-                Dra. Fátima Bollini Leonard
-              </h4>
-              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                A clínica foi fundada pela veterinária Fátima Bollini Leonard, que, além de possuir vasta 
-                experiência profissional e acadêmica, nutre uma verdadeira paixão por cães e gatos, algo que 
-                é refletido em seu atendimento exemplar e que inspira toda a equipe.
-              </p>
-              
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
-                  <span className="text-gray-700">Especialista em Fisioterapia Veterinária</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
-                  <span className="text-gray-700">Vasta experiência acadêmica e profissional</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-accent rounded-full mr-3"></div>
-                  <span className="text-gray-700">Paixão dedicada ao bem-estar animal</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
