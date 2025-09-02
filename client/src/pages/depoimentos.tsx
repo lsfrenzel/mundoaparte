@@ -77,32 +77,23 @@ export default function Depoimentos() {
           
           {/* Video Section */}
           <div className="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <video 
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-                className="w-full h-auto object-cover"
+            <div className="relative w-full h-96 md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-black">
+              <video
+                className="w-full h-full object-contain"
+                controls
                 poster="/depoimentopet_anton_1756841323877.png"
+                preload="metadata"
               >
-                <source 
-                  src="/video_anton_1756841320076.mp4" 
-                  type="video/mp4" 
-                />
-                <source 
-                  src="/attached_assets/video_anton_1756841320076.mp4" 
-                  type="video/mp4" 
-                />
-                <img 
-                  src="/depoimentopet_anton_1756841323877.png" 
-                  alt="Anton - Depoimento de Recuperação" 
-                  className="w-full"
-                />
+                <source src="/video_anton_1756841320076.mp4" type="video/mp4" />
+                <source src="/attached_assets/video_anton_1756841320076.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
               </video>
+              <div className="absolute bottom-4 left-4 text-white bg-black bg-opacity-50 px-2 py-1 rounded text-xs">
+                Toque para reproduzir com áudio
+              </div>
             </div>
             <p className="text-white mt-4 text-sm opacity-90">
-              Veja como nossos tratamentos transformam a vida dos pets
+              Conheça a história de recuperação do Anton
             </p>
           </div>
         </div>

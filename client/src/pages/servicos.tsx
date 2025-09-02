@@ -15,7 +15,7 @@ export default function Servicos() {
       icon: "fas fa-swimming-pool",
       title: "Hidroterapia",
       description: "Tratamento em piscina aquecida para recuperação de lesões, fortalecimento muscular e alívio de dores articulares.",
-      image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+      image: "/cao_fisioterapia4_1756842095797.jpeg",
       details: "A hidroterapia utiliza as propriedades físicas da água para promover a recuperação. O ambiente aquático reduz o impacto nas articulações enquanto oferece resistência natural para fortalecimento muscular.",
       highlight: true
     },
@@ -23,21 +23,21 @@ export default function Servicos() {
       icon: "fas fa-hands-helping",
       title: "Fisioterapia",
       description: "Exercícios terapêuticos, massagens e técnicas manuais para recuperação de mobilidade e função muscular.",
-      image: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+      image: "/cao_fisioterapia_1756842095796.jpeg",
       details: "Programa personalizado de exercícios e técnicas manuais para restaurar a função normal, melhorar a mobilidade e reduzir a dor em pets com lesões ortopédicas ou neurológicas."
     },
     {
       icon: "fas fa-bolt",
       title: "Laserterapia",
       description: "Tecnologia avançada para acelerar a cicatrização, reduzir inflamações e promover regeneração celular.",
-      image: "https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+      image: "/cao_fisioterapia2_1756842095797.jpeg",
       details: "Utiliza luz laser de baixa intensidade para estimular processos biológicos naturais, acelerando a cura e proporcionando alívio da dor sem efeitos colaterais."
     },
     {
       icon: "fas fa-leaf",
       title: "Acupuntura",
       description: "Medicina tradicional chinesa adaptada para pets, eficaz no controle da dor e equilíbrio energético.",
-      image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+      image: "/whatsapp_image_1.jpeg",
       details: "Técnica milenar que utiliza agulhas finas em pontos específicos para estimular o sistema nervoso e promover a liberação de endorfinas naturais."
     },
     {
