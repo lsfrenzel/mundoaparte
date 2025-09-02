@@ -72,7 +72,7 @@ export default function Footer() {
                   allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização da Clínica Mundo à Parte Vila Mariana - R. Bela Flor, 217"
+                  title="Localização da Clínica de Fisioterapia Veterinária - Vila Mariana - R. Bela Flor, 217"
                 ></iframe>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Mundo à Parte</h3>
+              <h3 className="text-xl font-bold mb-4">Clínica de Fisioterapia Veterinária</h3>
               <p className="text-gray-300 mb-4">
                 Especializada em fisioterapia e reabilitação animal, oferecendo cuidados personalizados para a recuperação do seu pet.
               </p>
@@ -135,7 +135,7 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-gray-600 pt-8 mt-8 text-center text-gray-300">
-            <p>&copy; 2025 Mundo à Parte Vila Mariana. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Clínica de Fisioterapia Veterinária - Vila Mariana. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

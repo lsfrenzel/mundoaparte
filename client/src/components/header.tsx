@@ -56,7 +56,7 @@ export default function Header() {
               <h1 className={`text-lg sm:text-xl font-bold transition-colors ${
                 isScrolled ? 'text-white' : 'text-primary'
               }`}>
-                Mundo à Parte
+Clínica de Fisioterapia Veterinária
               </h1>
               <p className={`text-xs sm:text-sm transition-colors ${
                 isScrolled ? 'text-gray-200' : 'text-gray-600'
