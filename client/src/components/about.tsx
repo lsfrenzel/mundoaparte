@@ -8,7 +8,7 @@ export default function About() {
               <video 
                 controls
                 className="w-full h-auto object-cover"
-                poster="/postervideo_1756815844890.png"
+                poster="/poster_video2_1756823862135.png"
                 preload="metadata"
               >
                 <source 
@@ -20,7 +20,7 @@ export default function About() {
                   type="video/mp4" 
                 />
                 <img 
-                  src="/postervideo_1756815844890.png" 
+                  src="/poster_video2_1756823862135.png" 
                   alt="Clínica de Fisioterapia Veterinária - Vila Mariana - Interior da Clínica" 
                   className="w-full"
                 />

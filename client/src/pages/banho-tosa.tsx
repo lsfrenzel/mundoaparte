@@ -108,7 +108,7 @@ export default function BanhoTosa() {
                 <video
                   className="w-full h-full object-contain"
                   controls
-                  poster="/attached_assets/image_1756737469952.png"
+                  poster="/banhoetosapets_1756823791962.png"
                   preload="metadata"
                 >
                   <source src="/pet_shop_vilamariana_1756738328191.mp4" type="video/mp4" />

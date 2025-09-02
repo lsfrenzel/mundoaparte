@@ -84,14 +84,14 @@ export default function Depoimentos() {
                 loop 
                 playsInline
                 className="w-full h-auto object-cover"
-                poster="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
+                poster="/depoimentopet_1756823826930.png"
               >
                 <source 
                   src="https://videos.pexels.com/video-files/4009720/4009720-hd_1920_1080_25fps.mp4" 
                   type="video/mp4" 
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" 
+                  src="/depoimentopet_1756823826930.png" 
                   alt="Pets felizes após tratamento" 
                   className="w-full"
                 />
