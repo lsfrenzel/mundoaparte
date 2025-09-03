@@ -216,4 +216,29 @@ html {
       height: 70vh !important;
     }
   }
+  
+  /* Hero image mobile optimizations */
+  @media (max-width: 768px) {
+    .hero-image {
+      background-attachment: scroll !important;
+      min-height: 100vh !important;
+      padding: 1rem 0 !important;
+    }
+    
+    .hero-image h1 {
+      line-height: 1.1 !important;
+      margin-bottom: 1rem !important;
+      padding: 0 0.5rem !important;
+    }
+    
+    .hero-image p {
+      line-height: 1.5 !important;
+      margin-bottom: 1.5rem !important;
+      padding: 0 0.5rem !important;
+    }
+    
+    .hero-image .container {
+      padding: 1rem 0.5rem !important;
+    }
+  }
 }
