@@ -51,7 +51,7 @@ export default function BanhoTosa() {
       title: "Limpeza de Ouvidos",
       description: "Limpeza especializada para prevenir infecções e manter a saúde auditiva.",
       icon: "fas fa-stethoscope",
-      image: "/BanhoRelaxante_1756859698948.jpeg",
+      image: "/banhotosa_nova.jpeg",
       details: "Procedimento delicado com produtos específicos"
     }
   ];
@@ -223,7 +223,7 @@ export default function BanhoTosa() {
             
             <div className="relative" data-aos="fade-left">
               <img 
-                src="/SpaparaPets_1756859698951.jpeg" 
+                src="/bnhotosamundoaprte.jpeg" 
                 alt="Pet feliz após banho e tosa"
                 className="rounded-2xl shadow-lg object-cover w-full h-96"
               />

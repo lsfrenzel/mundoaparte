@@ -14,7 +14,7 @@ export default function Depoimentos() {
     {
       name: "Maria Silva",
       pet: "Rex",
-      photo: "/fatima_1756813549083.jpeg",
+      photo: "/rex.jpeg",
       text: "O Rex estava com muita dificuldade para andar após a cirurgia. Com a hidroterapia aqui na clínica, ele voltou a correr e brincar como antes. Equipe maravilhosa!",
       rating: 5,
       service: "Hidroterapia"

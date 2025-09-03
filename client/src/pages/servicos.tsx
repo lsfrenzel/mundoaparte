@@ -97,7 +97,7 @@ export default function Servicos() {
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className={`rounded-lg w-full mb-4 h-48 ${service.title === 'Acupuntura' || service.title === 'Ozonioterapia' ? 'object-top object-cover' : 'object-cover'}`}
+                  className={`rounded-lg w-full mb-4 h-48 ${service.title === 'Acupuntura' ? 'object-top object-cover' : service.title === 'Ozonioterapia' ? 'object-center object-cover' : 'object-cover'}`}
                 />
                 <p className="text-gray-700 mb-4">
                   {service.description}
