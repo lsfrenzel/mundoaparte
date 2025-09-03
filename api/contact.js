@@ -31,14 +31,23 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransporter({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER || 'mundoaparte.vilamariana@gmail.com',
-        pass: process.env.EMAIL_PASS || 'enpv chmn nosi ddzn'
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
       }
     });
 
+    // Validate email credentials
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.error('Email credentials not configured');
+      return res.status(500).json({ 
+        success: false, 
+        message: 'Configuração de email não encontrada. Tente novamente mais tarde.' 
+      });
+    }
+
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'mundoaparte.vilamariana@gmail.com',
-      to: 'mundoaparte.vilamariana@gmail.com',
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: `Novo Lead - ${tutorName} (Pet: ${petName})`,
       html: `
         <h2>Nova Solicitação de Contato</h2>

@@ -15,28 +15,28 @@ export default function BanhoTosa() {
       title: "Banho Relaxante",
       description: "Banho com produtos hipoalergênicos e shampoos terapêuticos especiais para cada tipo de pelagem.",
       icon: "fas fa-bath",
-      image: "/banhoetosa1_1756842619907.jpeg",
+      image: "/BanhoRelaxante_1756859698948.jpeg",
       details: "Inclui escovação, limpeza de ouvidos e corte de unhas"
     },
     {
       title: "Tosa Higiênica",
       description: "Tosa especializada em áreas sensíveis para manter a higiene e saúde do seu pet.",
       icon: "fas fa-cut",
-      image: "/banhoetosa4_1756842619908.jpeg",
+      image: "/TosaHigienica.jpeg",
       details: "Foco em regiões íntimas, patas e região dos olhos"
     },
     {
       title: "Tosa Completa",
       description: "Serviço completo de embelezamento com cortes personalizados para cada raça.",
       icon: "fas fa-scissors",
-      image: "/banhotosa_1756842655032.jpeg",
+      image: "/TosaCompleta_1756859698952.jpeg",
       details: "Corte estilizado, acabamento profissional e hidratação"
     },
     {
       title: "Spa para Pets",
       description: "Tratamento completo de relaxamento com aromaterapia e massagem terapêutica.",
       icon: "fas fa-spa",
-      image: "/banhoetosa1_1756842619907.jpeg",
+      image: "/SpaparaPets_1756859698951.jpeg",
       details: "Experiência única de bem-estar para seu pet",
       highlight: true
     },
@@ -44,14 +44,14 @@ export default function BanhoTosa() {
       title: "Hidratação Profunda",
       description: "Tratamento intensivo para pelagem ressecada com produtos naturais.",
       icon: "fas fa-tint",
-      image: "/banhoetosa4_1756842619908.jpeg",
+      image: "/HidratacaoProfunda.jpeg",
       details: "Restaura o brilho natural e maciez da pelagem"
     },
     {
       title: "Limpeza de Ouvidos",
       description: "Limpeza especializada para prevenir infecções e manter a saúde auditiva.",
       icon: "fas fa-stethoscope",
-      image: "/banhotosa_1756842655032.jpeg",
+      image: "/BanhoRelaxante_1756859698948.jpeg",
       details: "Procedimento delicado com produtos específicos"
     }
   ];
@@ -223,7 +223,7 @@ export default function BanhoTosa() {
             
             <div className="relative" data-aos="fade-left">
               <img 
-                src="/banhoetosa1_1756842619907.jpeg" 
+                src="/SpaparaPets_1756859698951.jpeg" 
                 alt="Pet feliz após banho e tosa"
                 className="rounded-2xl shadow-lg object-cover w-full h-96"
               />
