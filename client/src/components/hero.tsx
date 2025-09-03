@@ -11,8 +11,8 @@ export default function Hero() {
   };
 
   return (
-    <section id="inicio" className="hero-image min-h-screen flex items-center justify-center text-white">
-      <div className="container mx-auto px-4 text-center">
+    <section id="inicio" className="hero-image min-h-screen flex items-center justify-center text-white relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
             Fisioterapia e <br />
