@@ -4,7 +4,6 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Services from "@/components/services";
 import Testimonials from "@/components/testimonials";
-import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
 import ScrollToTop from "@/components/scroll-to-top";
@@ -22,7 +21,6 @@ export default function Home() {
       <Hero />
       <About />
       <Testimonials />
-      <Contact />
       <Footer />
       <WhatsAppFloat />
       <ScrollToTop />
