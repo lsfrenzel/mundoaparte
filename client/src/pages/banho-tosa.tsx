@@ -59,7 +59,6 @@ export default function BanhoTosa() {
   return (
     <div className="min-h-screen bg-cream">
       <Header />
-      <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11462045404"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
