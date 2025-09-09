@@ -59,14 +59,6 @@ export default function BanhoTosa() {
   return (
     <div className="min-h-screen bg-cream">
       <Header />
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11462045404"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11462045404');
-</script>
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-r from-primary to-primary-light text-white overflow-hidden">
         <div className="container mx-auto px-4">
