@@ -101,16 +101,17 @@ Clínica de Fisioterapia Veterinária
               }`}></span>
             </Link>
             <Link 
-              href="/banho-tosa"
-              className={`font-medium transition-all duration-300 hover:text-accent relative group ${
-                isScrolled ? 'text-white' : 'text-primary'
-              } ${isActive('/banho-tosa') ? 'text-accent' : ''}`}
-            >
-              Banho & Tosa
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
-                isActive('/banho-tosa') ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </Link>
+             href="/banho-tosa"
+             className="font-medium text-purple-600 transition-all duration-300 relative group"
+           >
+            Banho & Tosa
+           <span
+               className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+              isActive('/banho-tosa') ? 'w-full' : 'w-0 group-hover:w-full'
+             }`}
+           ></span>
+           </Link>
+
             <Link 
               href="/depoimentos"
               className={`font-medium transition-all duration-300 hover:text-accent relative group ${
