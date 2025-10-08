@@ -41,6 +41,7 @@ Preferred communication style: Simple, everyday language.
 
 ## External Dependencies
 - **Database Hosting**: Neon Database (@neondatabase/serverless) for serverless PostgreSQL
+- **Email Service**: Resend API for transactional email delivery with Replit Connector integration
 - **UI Components**: Comprehensive Radix UI component library for accessible primitives
 - **Animation Libraries**: AOS for scroll animations, GSAP for advanced interactions
 - **Typography**: Google Fonts (Inter) for consistent typography
@@ -61,4 +62,8 @@ Preferred communication style: Simple, everyday language.
 - **Type Checking**: TypeScript with strict mode enabled
 - **Development Server**: Express with Vite middleware for hot module replacement
 - **Production Deployment**: Vercel with static build and serverless functions
-- **Contact Form**: Serverless function at /api/contact.js for form processing
+- **Contact Form**: 
+  - Development: /api/leads endpoint using Replit Resend Connector for secure API key management
+  - Production: /api/contact.js serverless function with RESEND_API_KEY environment variable
+  - Email delivery gracefully degrades on failure, always returning success to user
+  - Sends notifications to mundoaparte.vilamariana@gmail.com
