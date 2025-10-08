@@ -3,21 +3,14 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertLeadSchema } from "@shared/schema";
 import { z } from "zod";
-import nodemailer from "nodemailer";
-
-// Email configuration
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER || 'mundoaparte.vilamariana@gmail.com',
-    pass: process.env.EMAIL_PASS || '' // App password needed
-  }
-});
+import { getUncachableResendClient } from "./resend";
 
 async function sendEmailNotification(lead: any) {
   try {
-    const mailOptions = {
-      from: process.env.EMAIL_USER || 'mundoaparte.vilamariana@gmail.com',
+    const { client, fromEmail } = await getUncachableResendClient();
+    
+    await client.emails.send({
+      from: fromEmail,
       to: 'mundoaparte.vilamariana@gmail.com',
       subject: `Novo Lead - ${lead.tutorName} (Pet: ${lead.petName})`,
       html: `
@@ -31,12 +24,13 @@ async function sendEmailNotification(lead: any) {
         <p><strong>Mensagem:</strong> ${lead.message || 'Nenhuma mensagem adicional'}</p>
         <p><strong>Data/Hora:</strong> ${new Date().toLocaleString('pt-BR')}</p>
       `
-    };
-
-    await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully');
+    });
+    
+    console.log('Email sent successfully via Resend');
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending email via Resend:', error);
+    // Gracefully degrade - don't throw error, just log it
+    // The lead was already persisted, so the form submission succeeded
   }
 }
 
